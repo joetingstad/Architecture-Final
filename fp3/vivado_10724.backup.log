@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May  6 22:29:03 2020
+# Process ID: 10724
+# Current directory: C:/Users/Jonathan/Desktop/fp3.5
+# Command line: vivado.exe -mode batch -source ./setup_project.tcl
+# Log file: C:/Users/Jonathan/Desktop/fp3.5/vivado.log
+# Journal file: C:/Users/Jonathan/Desktop/fp3.5\vivado.jou
+#-----------------------------------------------------------
+source ./setup_project.tcl
+# set outputdir ./Our_processor
+# file mkdir $outputdir
+# set files [glob -nocomplain "$outputdir/*"]
+# if {[llength $files] != 0} {
+#     puts "deleting contents of $outputdir"
+#     file delete -force {*}[glob -directory $outputdir *]; # clear folder contents
+# } else {
+#     puts "$outputdir is empty"
+# }
+deleting contents of ./Our_processor
+error deleting "C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim\sim_1\behav\xsim": permission denied
+    while executing
+"file delete -force {*}[glob -directory $outputdir *]"
+    invoked from within
+"if {[llength $files] != 0} {
+    puts "deleting contents of $outputdir"
+    file delete -force {*}[glob -directory $outputdir *]; # clear folder conte..."
+    (file "./setup_project.tcl" line 12)
+INFO: [Common 17-206] Exiting Vivado at Wed May  6 22:29:06 2020...

@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May  6 22:31:22 2020
+# Process ID: 48588
+# Current directory: C:/Users/Jonathan/Desktop/fp3.5/Our_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31652 C:\Users\Jonathan\Desktop\fp3.5\Our_processor\Processor_top_level.xpr
+# Log file: C:/Users/Jonathan/Desktop/fp3.5/Our_processor/vivado.log
+# Journal file: C:/Users/Jonathan/Desktop/fp3.5/Our_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 923.793 ; gain = 274.254
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/Jonathan/Desktop/fp3.5/gen_six_bit_mux.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/Jonathan/Desktop/fp3.5/gen_six_bit_mux.vhd' cannot be added to the project because it already exists in the project, skipping this file
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xelab -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:130]
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_sim_behav -key {Behavioral:sim_1:Functional:processor_sim} -tclbatch {processor_sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source processor_sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 975.723 ; gain = 24.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xelab -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:130]
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 986.012 ; gain = 0.000
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: processor_sim
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1484.480 ; gain = 225.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor_sim' [C:/Users/Jonathan/Desktop/fp3.5/processor_sim.vhd:9]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/Jonathan/Desktop/fp3.5/processor_sim.vhd:22]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/Jonathan/Desktop/fp3.5/processor_sim.vhd:30]
+INFO: [Synth 8-3491] module 'Our_Processor' declared at 'C:/Users/Jonathan/Desktop/fp3.5/Processor_top_level.vhd:4' bound to instance 'dut' of component 'Our_Processor' [C:/Users/Jonathan/Desktop/fp3.5/processor_sim.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'Our_Processor' [C:/Users/Jonathan/Desktop/fp3.5/Processor_top_level.vhd:9]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'pt_floppy' declared at 'C:/Users/Jonathan/Desktop/fp3.5/processor_top.vhd:3' bound to instance 'midlvlPoces' of component 'pt_floppy' [C:/Users/Jonathan/Desktop/fp3.5/Processor_top_level.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'pt_floppy' [C:/Users/Jonathan/Desktop/fp3.5/processor_top.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/Jonathan/Desktop/fp3.5/control_unit.vhd:5' bound to instance 'controlDeMind' of component 'control_unit' [C:/Users/Jonathan/Desktop/fp3.5/processor_top.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/Jonathan/Desktop/fp3.5/control_unit.vhd:16]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'C:/Users/Jonathan/Desktop/fp3.5/main_decoder.vhd:4' bound to instance 'md' of component 'main_decoder' [C:/Users/Jonathan/Desktop/fp3.5/control_unit.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [C:/Users/Jonathan/Desktop/fp3.5/main_decoder.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [C:/Users/Jonathan/Desktop/fp3.5/main_decoder.vhd:14]
+INFO: [Synth 8-3491] module 'alu_decoder' declared at 'C:/Users/Jonathan/Desktop/fp3.5/alu_decoder.vhd:5' bound to instance 'ad' of component 'alu_decoder' [C:/Users/Jonathan/Desktop/fp3.5/control_unit.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'alu_decoder' [C:/Users/Jonathan/Desktop/fp3.5/alu_decoder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'alu_decoder' (2#1) [C:/Users/Jonathan/Desktop/fp3.5/alu_decoder.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (3#1) [C:/Users/Jonathan/Desktop/fp3.5/control_unit.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Dpu_top' declared at 'C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:3' bound to instance 'DatathisPath' of component 'Dpu_top' [C:/Users/Jonathan/Desktop/fp3.5/processor_top.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'Dpu_top' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'Do_the_Flop' declared at 'C:/Users/Jonathan/Desktop/fp3.5/Flip_Flop_register.vhd:4' bound to instance 'pcFlipper' of component 'Do_the_Flop' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'Do_the_Flop' [C:/Users/Jonathan/Desktop/fp3.5/Flip_Flop_register.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Do_the_Flop' (4#1) [C:/Users/Jonathan/Desktop/fp3.5/Flip_Flop_register.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/Jonathan/Desktop/fp3.5/four_bit_adder.vhd:4' bound to instance 'pcIncby1' of component 'adder' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:86]
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/Jonathan/Desktop/fp3.5/four_bit_adder.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (5#1) [C:/Users/Jonathan/Desktop/fp3.5/four_bit_adder.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'generic_left_shift' declared at 'C:/Users/Jonathan/Desktop/fp3.5/generic_left_shift.vhd:3' bound to instance 'immShift' of component 'generic_left_shift' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'generic_left_shift' [C:/Users/Jonathan/Desktop/fp3.5/generic_left_shift.vhd:9]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_left_shift' (6#1) [C:/Users/Jonathan/Desktop/fp3.5/generic_left_shift.vhd:9]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'C:/Users/Jonathan/Desktop/fp3.5/four_bit_adder.vhd:4' bound to instance 'pcincby2' of component 'adder' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:88]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'generic_two_input_multiplexer' declared at 'C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:4' bound to instance 'branchPlexer' of component 'generic_two_input_multiplexer' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'generic_two_input_multiplexer' [C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_two_input_multiplexer' (7#1) [C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'generic_two_input_multiplexer' declared at 'C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:4' bound to instance 'PCPlexer' of component 'generic_two_input_multiplexer' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:93]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'register_file' declared at 'C:/Users/Jonathan/Desktop/fp3.5/register_file.vhd:7' bound to instance 'regfile' of component 'register_file' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/Jonathan/Desktop/fp3.5/register_file.vhd:20]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'register_file' (8#1) [C:/Users/Jonathan/Desktop/fp3.5/register_file.vhd:20]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'generic_two_input_multiplexer' declared at 'C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:4' bound to instance 'degSelect' of component 'generic_two_input_multiplexer' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'generic_two_input_multiplexer__parameterized2' [C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:10]
+	Parameter width bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'generic_two_input_multiplexer__parameterized2' (8#1) [C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'extend' declared at 'C:/Users/Jonathan/Desktop/fp3.5/val_extender.vhd:5' bound to instance 'immext' of component 'extend' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'extend' [C:/Users/Jonathan/Desktop/fp3.5/val_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'extend' (9#1) [C:/Users/Jonathan/Desktop/fp3.5/val_extender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'generic_two_input_multiplexer' declared at 'C:/Users/Jonathan/Desktop/fp3.5/generic_two_input_multiplexer.vhd:4' bound to instance 'immMux' of component 'generic_two_input_multiplexer' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:124]
+INFO: [Synth 8-637] synthesizing blackbox instance 'src1Mux' of component 'gen_six_bit_mux' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:130]
+INFO: [Synth 8-637] synthesizing blackbox instance 'src2Mux' of component 'gen_six_bit_mux' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:136]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/Jonathan/Desktop/fp3.5/alu.vhd:10' bound to instance 'aluBOX' of component 'alu' [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/Jonathan/Desktop/fp3.5/alu.vhd:19]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'alu' (10#1) [C:/Users/Jonathan/Desktop/fp3.5/alu.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Dpu_top' (11#1) [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'pt_floppy' (12#1) [C:/Users/Jonathan/Desktop/fp3.5/processor_top.vhd:10]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/Jonathan/Desktop/fp3.5/instr_mem.vhd:10' bound to instance 'instructMemory' of component 'imem' [C:/Users/Jonathan/Desktop/fp3.5/Processor_top_level.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/Jonathan/Desktop/fp3.5/instr_mem.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (13#1) [C:/Users/Jonathan/Desktop/fp3.5/instr_mem.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Our_Processor' (14#1) [C:/Users/Jonathan/Desktop/fp3.5/Processor_top_level.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'processor_sim' (15#1) [C:/Users/Jonathan/Desktop/fp3.5/processor_sim.vhd:9]
+WARNING: [Synth 8-3331] design register_file has unconnected port dest[5]
+WARNING: [Synth 8-3331] design Dpu_top has unconnected port instr[31]
+WARNING: [Synth 8-3331] design Dpu_top has unconnected port instr[30]
+WARNING: [Synth 8-3331] design Dpu_top has unconnected port instr[29]
+WARNING: [Synth 8-3331] design Dpu_top has unconnected port instr[28]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1538.887 ; gain = 280.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1538.887 ; gain = 280.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1538.887 ; gain = 280.063
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1538.887 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'CLKM'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'reset'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[6]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[5]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[4]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[3]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[2]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[1]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'A_TO_G[0]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'AN[0]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'AN[1]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'AN[2]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'AN[3]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'AN[4]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'AN[5]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'AN[6]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'AN[7]'. [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc:77]
+Finished Parsing XDC File [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Jonathan/Desktop/fp3.5/Nexys4DDR_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/processor_sim_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1655.863 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1680.340 ; gain = 421.516
+56 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1680.340 ; gain = 694.328
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_sim' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim/memfile.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.sim/sim_1/behav/xsim'
+"xelab -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto bdea909940b843aba1550bbfc7412071 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_sim_behav xil_defaultlib.processor_sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:130]
+WARNING: [VRFC 10-4940] 'gen_six_bit_mux' remains a black box since it has no binding entity [C:/Users/Jonathan/Desktop/fp3.5/Dpu_top.vhd:136]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1680.340 ; gain = 0.000
+add_files -norecurse C:/Users/Jonathan/Desktop/fp3.5/gen_six_bit_mux.vhd
+WARNING: [filemgmt 56-12] File 'C:/Users/Jonathan/Desktop/fp3.5/gen_six_bit_mux.vhd' cannot be added to the project because it already exists in the project, skipping this file

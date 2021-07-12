@@ -1,0 +1,19 @@
+ADI $1 $1 10
+ADI $2 $2 5
+ADI $3 $3 2
+ADI $7 $7 8
+ADI $6 $6 136
+ADI $5 $5 255
+RedoComparisons:
+ORR $4 $2 $1 # first result= 15 #### second result= 8
+XOR $1 $1 $3 # first result= 8 #### second result= 10
+AND $2 $2 $3 # first result= 0  #### second result= 0
+BEQ $4 $7 1
+JMP RedoComparisons
+Next:
+SLL $1 $4 2 
+SRL $5 $5 5
+ADD $4 $1 $3
+BEQ $1 $6 1
+JMP Next
+Exit:

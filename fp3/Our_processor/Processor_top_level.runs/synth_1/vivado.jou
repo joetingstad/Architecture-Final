@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May  6 22:29:46 2020
+# Process ID: 46680
+# Current directory: C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.runs/synth_1
+# Command line: vivado.exe -log processor_sim.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_sim.tcl
+# Log file: C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.runs/synth_1/processor_sim.vds
+# Journal file: C:/Users/Jonathan/Desktop/fp3.5/Our_processor/Processor_top_level.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processor_sim.tcl -notrace

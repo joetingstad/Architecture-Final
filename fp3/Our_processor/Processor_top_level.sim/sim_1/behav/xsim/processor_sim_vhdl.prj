@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Dpu_top.vhd" \
+"../../../../../Flip_Flop_register.vhd" \
+"../../../../../Processor_top_level.vhd" \
+"../../../../../alu.vhd" \
+"../../../../../alu_decoder.vhd" \
+"../../../../../control_unit.vhd" \
+"../../../../../four_bit_adder.vhd" \
+"../../../../../generic_left_shift.vhd" \
+"../../../../../generic_two_input_multiplexer.vhd" \
+"../../../../../instr_mem.vhd" \
+"../../../../../main_decoder.vhd" \
+"../../../../../processor_top.vhd" \
+"../../../../../register_file.vhd" \
+"../../../../../val_extender.vhd" \
+"../../../../../processor_sim.vhd" \
+
+# Do not sort compile order
+nosort

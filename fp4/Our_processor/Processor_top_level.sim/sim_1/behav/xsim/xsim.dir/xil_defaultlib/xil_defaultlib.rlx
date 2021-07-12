@@ -1,0 +1,19 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Jonathan/Desktop/fp8/fp4/Dpu_top.vhd,1588831232,vhdl,,,,dpu_top,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/Flip_Flop_register.vhd,1588146895,vhdl,,,,do_the_flop,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/Processor_top_level.vhd,1589214068,vhdl,,,,our_processor,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/alu.vhd,1589151006,vhdl,,,,alu,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/alu_decoder.vhd,1589129253,vhdl,,,,alu_decoder,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/control_unit.vhd,1589129253,vhdl,,,,control_unit,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/four_bit_adder.vhd,1588145731,vhdl,,,,adder,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/gen_six_bit_mux.vhd,1588831177,vhdl,,,,generic_two_input_multiplexer,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/generic_left_shift.vhd,1588831757,vhdl,,,,generic_left_shift,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/instr_mem.vhd,1589214294,vhdl,,,,imem,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/main_decoder.vhd,1589129394,vhdl,,,,main_decoder,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/processor_sim.vhd,1589165902,vhdl,,,,processor_sim,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/processor_top.vhd,1588828857,vhdl,,,,pt_floppy,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/register_file.vhd,1589132645,vhdl,,,,register_file,,,,,,,,
+C:/Users/Jonathan/Desktop/fp8/fp4/val_extender.vhd,1588139642,vhdl,,,,extend,,,,,,,,
